@@ -1,0 +1,145 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Page</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	text-decoration: underline;
+	color: #CCC;
+}
+a:active {
+	text-decoration: none;
+	color: rgb(102,102,102);
+}
+body,td,th {
+	color: #FFF;
+	font-size: 15px;
+}
+a {
+	font-size: 14px;
+}
+</style>
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script type="text/javascript">
+
+  // Original JavaScript code by Chirp Internet: www.chirp.com.au
+  // Please acknowledge use of this code by including this header.
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
+
+</script>
+
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="header">
+  		<div id="edit"><img src="edit-icon.jpg"/></div>
+  		<div class="home">Home</div>
+    <div class="home">People</div>
+    <a href="contact.html" class="home">contact</a>
+  </div>
+  <div id="stage">
+  <a href="Slider/Walibi.jpg"/><img src="Slider/Walibi.jpg" border="0"/>
+    <div class="text">WALIBI</div>
+  	 <div class="arrow-right"></div>
+      <div class="view-case">View Case</div>
+      <div class="arrow-left"><img src="arrowleft.png"/></div>
+  <a href="oxxio-new.jpg"/><img src="oxxio-new.jpg" border="0"/>
+  		 <div class="text">WALIBI</div>
+  	 <div class="arrow-right"><img src="arrowL.png"/></div>
+      <div class="view-case">View Case</div>
+      <div class="arrow-left"><img src="arro/></div>
+  <a href="Florensis-new.jpg"/><img src="Florensis-new.jpg" border="0"/>
+  		 <div class="text">WALIBI</div>
+  	 <div class="arrow-right"><img src="arrowR.png"/></div>
+      <div class="view-case">View Case</div>
+      <div class="arrow-left"><img src="arrowL.png"/></div>
+  	</div>
+  </div>
+  <div class="para"><div class="heading">WE ARE TAM TAM</div>
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Tam Tam is a full service digital agency focusing on Dutch Digital Service Design.We<br> combine strategy,design,technology and interaction to make the digital interactions <br>between company and costomer valuable and memorable.We work for awsome brands <br>with a team of 120 digitals from our office in Armsterdam.Making great work and having <br>a blast doing it.Thats's what we believe in.
+  <div class="clear"></div>
+  </div>
+  
+  <div class="photo"><img src="feed_bg.jpg"/>
+  			<div class="box0">
+             <div class="follow">FOLLOW US ON INSTAGRAM</div>
+		     <div class="instaid">@tamtamnl</div>
+    </div>
+            
+  			 <div class="box1">
+             	<div class="pic1"><img src="Feed/3.jpg" width="1000" height="200"/></div>
+                <div class="cnt2">narrative, descriptive, expository, and argumentative. Each has a unique purpose. Some tell a story</div>
+             </div>
+             <div class="box2">
+             	<div class="pic1"><img src="Feed/2.jpg" width="1000" height="200"/></div>
+                <div class="cnt2">narrative, descriptive, expository, and argumentative. Each has a unique purpose. Some tell a story</div>
+             </div>
+             <div class="box3">
+             	<div class="pic1"><img src="Feed/1.jpg" width="1000" height="200"/></div>
+                <div class="cnt1">narrative, descriptive, expository, and argumentative. Each has a unique purpose. </div>
+             </div>
+             <div class="box4">
+             	<div class="pic1"><img src="Feed/6.jpg" width="1000" height="200"/></div>
+                <div class="cnt2">narrative, descriptive, expository, and argumentative. Each has a unique purpose. Some tell a.</div>
+             </div>
+             <div class="box5">
+             	<div class="pic1"><img src="Feed/5.jpg" width="1000" height="200"/></div>
+                <div class="cnt1">narrative, descriptive, expository, and argumentative. Each has a unique purpose. Some tell a story.</div>
+             </div>
+             <div class="box6">
+             	<div class="pic1"><img src="Feed/4.jpg" width="1000" height="200"/></div>
+                <div class="cnt3">narrative, descriptive, expository, and argumentative. Each has a unique purpose. Some tell a story, some are descriptive, descriptive.ch has a unique purpose</div>
+             </div>
+  </div>
+  <div class="footer">
+  		<div class="fb"><img src="fb-icon.png"/></div>
+        <div class="tw"><img src="tw-icon.png"/></div>
+        <div class="insta"><img src="insta-icon.png"/></div>
+  <div class="clear"></div>
+  </div>
+  
+
+
+</div>
+</body>
+</html>

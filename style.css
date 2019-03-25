@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header{
+	width:100%;
+	height:100px;
+	background-color:rgb(0,0,0);
+	position:relative;
+}
+#edit{
+	width:7%;
+	height:100px;
+	float:left;
+}
+.home{
+	width:5%;
+	height:65px;
+	float:left;
+	padding-left:2%;
+	padding-top:35px;
+	font-size:18px;
+	color:rgb(153,153,153);
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+}
+
+
+.text{
+	width:20%;
+	height:50px;
+	margin-top:50px;
+	margin-left:50%;
+	color:rgb(0,0,0);
+	font-size:40px;
+	font-weight:bold;
+	position: absolute;
+  	top: 280px;
+	right:35%;
+	font-familt:"Times New Roman", Times, serif;   
+	}
+.arrow-left{
+	width:5%;
+	height:20px;
+	position: absolute;
+  	top: 400px;
+	left:45%;
+	float:left;
+	}
+	.arrow-right{
+	width:5%;
+	height:20px;
+	position: absolute;
+  	top: 400px;
+	right:39%;
+	float:left;
+	}
+	.view-case{
+	width:6%;
+	height:18px;
+	background-color:rgb(0,0,0);
+	border-radius:10px;
+	position: absolute;
+  	top: 400px;
+	left:48%;
+	float:left;
+	padding-left:1%;
+	padding-top:2px;
+	color:rgb(255,255,255);
+	font-size:12px;
+	}
+	.para{
+		width:100%;
+		height:300px;
+		font-size:25px;
+		color:rgb(51,51,51);
+		padding-left:1%;
+		margin-top:45px;
+		line-height:35px;
+		text-align:center;
+	
+		
+		}
+	.heading{
+		color:rgb(0,0,0);
+		font-size:30px;
+		padding-top:40px;
+		font-weight:bold;
+		text-align:center;
+	}
+	.footer{
+		width:100%;
+		height:100px;
+		background-color:rgb(0,0,0);
+		padding-top:60px;
+		}
+	.fb{
+		width:5%;
+		height:50px;
+		margin-left:32%;
+		float:left;
+		
+		}
+		.tw{
+		width:5%;
+		height:50px;
+		margin-left:10%;
+		float:left;
+		}
+		.insta{
+		width:5%;
+		height:50px;
+		margin-left:10%;
+		float:left;
+		}
+		.photo{
+		width:100%;
+		height:790px;
+		position: relative;
+		background-color:rgb(204,255,0);
+		margin-top:35px;
+  
+}
+.follow{
+		width:100%;
+		height:50px;
+		color:rgb(102,153,204);
+		font-size:35px;
+		text-align:center;
+		margin-top:10px;
+		
+		}
+		
+.instaid{
+		width:100%;
+		height:30px;
+		color:rgb(255,255,255);
+		font-size:30px;
+		text-align:center;
+		margin-top:1px;
+	
+		
+	
+	
+	}
+		.box0{
+		width:80%;
+		height:120px;
+		position: absolute;
+  		top: 20px;
+		right:10%;
+		}
+	
+	
+		.box1{
+		width:20%;
+		height:255px;
+		background-color:rgb(0,204,102);
+		float:left;
+		position: absolute;
+  		top: 170px;
+		right:20%;
+		}
+	.box2{
+		width:20%;
+		height:255px;
+		background-color:rgb(153,0,0);
+		float:left;
+		position: absolute;
+  		top: 170px;
+		right:43%;
+		}
+		.box3{
+		width:20%;
+		height:255px;
+		background-color:rgb(0,0,153);
+		float:left;
+		position: absolute;
+  		top: 170px;
+		right:65%;
+		}
+		.box4{
+		width:20%;
+		height:255px;
+		background-color:rgb(0,204,102);
+		float:left;
+		position: absolute;
+  		top: 450px;
+		right:20%;
+		}
+	.box5{
+		width:20%;
+		height:255px;
+		background-color:rgb(153,0,0);
+		float:left;
+		position: absolute;
+  		top: 450px;
+		right:43%;
+		}
+		.box6{
+		width:20%;
+		height:255px;
+		background-color:rgb(0,0,153);
+		float:left;
+		position: absolute;
+  		top: 435px;
+		right:65%;
+		}
+		.pic1{
+		width:100%;
+		height:200px;
+		background-color:rgb(0,0,0);
+		
+		}
+	.cnt1{
+		width:100%;
+		height:60px;
+		background-color:rgb(255,255,255);
+		
+		}
+	.cnt2{
+		width:100%;
+		height:77px;
+		background-color:rgb(255,255,255);
+		
+		}
+	.cnt3{
+		width:100%;
+		height:88px;
+		background-color:rgb(255,255,255);
+		
+		}
+	.clear{
+		clear:both;}
+	.form{
+		width:55%;
+		height:250px;
+		background-color:rgba(0,102,153,.1);
+		margin-left:30%;
+		position: absolute;
+  		top: 200px;
+		right:20%;
+		}
+	.text-form{
+		width:50%;
+		height:20px;
+		margin-left:20%;
+		position: absolute;
+  		top: 100px;
+		right:22%;
+		font-size:35px;
+		color:rgb(255,255,255);
+		font-weight:bold;
+		text-align:center;
+		}
+		.col-75 {
+			  float: left;
+  			  width: 45%;
+  			  margin-top: 10px;
+			  margin-left:4%;
+			 
+				}
+		
+input[type=submit] {
+	width:25%;
+  background-color:rgb(255,0,0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position:absolute;
+  right:35%;
+  top:400px;
+ 
+}
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize:vertical;
+}
+.suc{
+		width:55%;
+		height:60px;
+		background-color:rgba(0,0,102,.1);
+		margin-left:30%;
+		position: absolute;
+  		top: 200px;
+		right:20%;
+		margin-top:40px;
+		}
+	.text-suc{
+		width:100%;
+		height:40px;
+		position: absolute;
+  		top: 20px;
+		font-size:20px;
+		color:rgb(255,255,255);
+		margin-left:30%;
+		
+		}
+		#stage {
+   
+  	 height: 300px;
+	width:100%;
+	height:740px;
+	position: relative;
+	background-repeat:no-repeat;
+  
+}
+
+  #stage a {
+    position: absolute;
+  }
+  #stage a img {
+    padding: 10px;
+    border: 0px solid #ccc;
+    background: #fff;
+	float:left;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+ 
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+}

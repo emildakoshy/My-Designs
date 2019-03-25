@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Contact</title>
+		<script>
+function validateForm() {
+  var fn = document.forms["myForm"]["fname"].value;
+  var ln = document.forms["myForm"]["lname"].value;
+  var em = document.forms["myForm"]["email"].value;
+  var ph = document.forms["myForm"]["phone"].value;
+  var mg = document.forms["myForm"]["subject"].value;
+
+  if (fn == "") {
+    alert("We need your First Name ");
+    return false;
+  }
+  if (ln== "") {
+    alert("We need your Last Name ");
+    return false;
+  }
+  if (em == "") {
+    alert("Please use a valid email address");
+    return false;
+  }
+  if (ph == "") {
+    alert("Phone Number must be filled out");
+    return false;
+  }
+  if (mg == "") {
+    alert("Sorry,Your message can't be empty");
+    return false;
+  }
+}
+</script>
+
+<script type="text/javascript">
+function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+}
+</script>
+ <script type="text/javascript">
+            function validation(){
+				
+				 var mob=document.getElementById("phone").value;
+				 if(mob==""){
+                    alert("mob is required");
+                     document.getElementById("phone").focus();
+                    return false;
+                }
+                    
+                if(isNaN(mob)){
+                    alert("mob.no contains only digits");
+                     document.getElementById("phone").focus();
+                    return false;
+                }
+              
+                 if((mob.length)!=10){
+                    alert("mobile number should contain 10 digits only");
+                    document.getElementById("phone").focus();
+                    return false;
+                }
+                  if((mob.charAt(0)!='9')&& (mob.charAt(0)!='8')&& (mob.charAt(0)!='7'))
+                  {
+                    alert("mob number should starts with 9 or 8 or 7");
+                    document.getElementById("phone").focus();
+                    return false;
+                }
+			}
+</script>
+</head>
+
+<body>
+<div class="gridContainer clearfix">
+
+  <div id="header">
+  		<div id="edit"><img src="edit-icon.jpg"/></div>
+  		<div class="home">Home</div>
+        <div class="home">People</div>
+        <div class="home">Contact</div>
+  </div>
+  
+  <div class="photo"><img src="feed_bg.jpg"/>
+  			
+             <div class="text-form">WE WOULD LOVE TO <br />HEAR FROM YOU</div>
+             <div class="form">
+             <form name="myForm" action="/action_page.php" onsubmit="return validateForm()"  method="post" onsubmit="return Validation()">
+             
+                 <div class="row">
+     			 <div class="col-75">
+        			<input type="text" id="fname" name="firstname" placeholder="First name..">
+                  </div>
+     		 </div>
+             <div class="row">
+     			 <div class="col-75">
+        			<input type="text" id="lname" name="lastname" placeholder="Last name..">
+                  </div>
+     		 </div>
+             <div class="row">
+     			 <div class="col-75">
+        			<input type="text" id="email" name="Your e-mail address" placeholder="Your e-mail address"  onblur="validateEmail(this);" />
+                  </div>
+     		 </div>
+             <div class="row">
+     			 <div class="col-75">
+        			<input type="text" id="phone" name="txtname" placeholder="Your phone number(Optional)" />
+                  </div>
+     		 </div>
+             <div class="row">
+             	 <div class="col-75">
+       				 <textarea id="subject" name="message" placeholder="Write something.." style="height:100px; width:635px;"></textarea>
+                  </div>
+             </div>
+             </form>
+             <form action="/action_page.php" onsubmit="myFunction()">
+  
+             <div class="row">
+      				<button onclick="return validation();" class="button"  href="msg-success.html">send</a>>Submit</button>
+    		</div>
+
+</form>
+
+
+			</div>
+                   
+             
+  </div>
+  <div class="footer">
+  		<div class="fb"><img src="fb-icon.png"/></div>
+        <div class="tw"><img src="tw-icon.png"/></div>
+        <div class="insta"><img src="insta-icon.png"/></div>
+  
+  </div>
+  
+
+<div class="clear"></div>
+</div>
+  
+
+
+
+</body>
+</html>
